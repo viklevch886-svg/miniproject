@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Magic Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <img src="./background.jpg" alt="" class="background-image">
+        <div class="background-overlay"></div>
+        <img src="./moon.png" alt="" class="background-moon">
+    </div>
+
+    <header class="hero" id="home">
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="#home" class="logo">
+                    <img src="./portal-symbol.png" alt="" class="logo-icon">
+                    <span>MYSTIC REALM</span>
+                </a>
+
+                <button class="burger" type="button"
+                    aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portal">Magic Portal</a></li>
+                    <li><a href="#login">Enter the Realm</a></li>
+                </ul>
+
+                <div class="socials">
+                    <span class="portal-status"></span>
+                    PORTAL: LOCKED
+                </div>
+
+            </nav>
+
+            <div class="hero-wrapper">
+
+                <div class="hero-text">
+                    <p class="hero-label">✧ THE FORGOTTEN KINGDOM ✧</p>
+
+                    <h1 class="hero-title">
+                        THE MAGIC
+                        <span>PORTAL</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A secret lies beyond the ancient gates.
+                        Only a true adventurer can reveal it.
+                        Enter your name and secret spell to begin
+                        your magical journey.
+                    </p>
+
+                    <a href="#login" class="hero-button">
+                        OPEN THE PORTAL <span>→</span>
+                    </a>
+
+                    <p class="hero-note">
+                        ✦ YOUR ADVENTURE BEGINS HERE ✦
+                    </p>
+                </div>
+
+                <div class="hero-image" id="portal">
+                    <div class="portal-art">
+                        <img src="./portal-symbol.png"
+                            alt="Magic portal" class="portal-image">
+
+                        <img src="./magic-flame.png"
+                            alt="" class="portal-flame">
+
+                        <img src="./star.png"
+                            alt="" class="portal-star portal-star-one">
+
+                        <img src="./star.png"
+                            alt="" class="portal-star portal-star-two">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section" id="login">
+            <div class="container">
+
+                <div class="login-heading">
+                    <p class="section-label">ANCIENT SECURITY SYSTEM</p>
+                    <h2>Enter the Realm</h2>
+                    <p>Prove that you are worthy of entering the mysterious world.</p>
+                </div>
+
+                <div class="login-card">
+
+                    <div class="login-card-top">
+                        <img src="./portal-symbol.png" alt="" class="login-icon">
+
+                        <div>
+                            <p class="login-eyebrow">WELCOME, ADVENTURER</p>
+                            <h3>Unlock the Portal</h3>
+                        </div>
+                    </div>
+
+                    <div class="login-divider">
+                        <span>✧ ───────── ✦ ───────── ✧</span>
+                    </div>
+
+                    <form class="form" id="loginForm">
+
+                        <div class="form-group">
+                            <label for="username" class="form-label">
+                                <span>♙</span> ADVENTURER'S NAME
+                            </label>
+
+                            <input type="text"
+                                id="username"
+                                name="username"
+                                class="form-name"
+                                placeholder="Enter your name..."
+                                autocomplete="username"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">
+                                <span>✧</span> SECRET SPELL / PIN CODE
+                            </label>
+
+                            <div class="form-box">
+                                <input type="password"
+                                    id="password"
+                                    name="password"
+                                    class="form-password"
+                                    placeholder="Whisper the secret..."
+                                    autocomplete="current-password"
+                                    required>
+
+                                <button type="button"
+                                    class="form-eye-button"
+                                    aria-label="Show password"
+                                    aria-pressed="false">
+
+                                    <img src="./torch-off.png"
+                                        alt="" class="form-eye">
+                                </button>
+                            </div>
+
+                            <p class="form-tip">
+                                The ancient flame reveals your secret.
+                            </p>
+                        </div>
+
+                        <p class="form-message" aria-live="polite"></p>
+
+                        <button type="submit" class="form-login">
+                            <img src="./star.png" alt="">
+                            <span>OPEN THE PORTAL</span>
+                            <span class="button-arrow">→</span>
+                        </button>
+
+                    </form>
+
+                    <div class="login-card-footer">
+                        ✧ ONLY THE WORTHY MAY ENTER ✧
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#home" class="footer-logo">✦ MYSTIC REALM</a>
+                <p>AN ADVENTURE BEGINS WITH A SINGLE SPELL</p>
+                <a href="#home" class="footer-top">BACK TO TOP ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
